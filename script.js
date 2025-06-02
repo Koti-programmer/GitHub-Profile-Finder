@@ -32,3 +32,26 @@ async function getProfile() {
     profileDiv.innerHTML = `<p>${error.message}</p>`;
   }
 }
+
+// Web-Protect-start//
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  document.addEventListener('keydown', function (e) {
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+      (e.ctrlKey && e.key === 'U')
+    ) {
+      e.preventDefault();
+    }
+  });
+
+  // Block Ctrl+U
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+      e.preventDefault();
+      alert('Thank you for checking!😁');
+    }
+  });
+
+// Web-Protect-End//
