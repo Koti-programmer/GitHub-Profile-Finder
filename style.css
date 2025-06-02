@@ -190,8 +190,17 @@ input[type="text"] {
   border-radius: 10px;
   font-size: 16px;
   outline: none;
+  background: lightblue;
   /* margin-bottom: 10px; */
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
+  /* background-image: url('./images/2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000000; */
+
 }
 
 button {
